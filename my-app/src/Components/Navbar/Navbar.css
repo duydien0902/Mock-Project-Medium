@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Relative-Navbar{
+   position: relative;
+   width: 100%;
+   height: 80px;
+}
+.Navbar{
+    /* z-index: 2; */
+    position: fixed;
+    width: 100%;
+    background-color:#a9d1f7;
+    border-bottom: 2px solid black;
+}
+/* .both{
+    
+} */
+.Container-Navbar{
+   margin: 0 auto;
+   display: flex;
+   width: 80%;
+   padding: 20px 0 20px 0;
+   color:black;
+}
+.Container-Navbar-left{
+    /* border: 2px solid greenyellow; */
+    width: 60%;
+}
+.Container-Navbar-left h1{
+   cursor: pointer;
+}
+
+.Container-Navbar-right{
+   
+  width: 40%;
+  height: 30px;
+  /* border: 2px solid greenyellow; */
+  padding-top: 10px;
+ }
+ .Use-Container-Navbar-right-ul-li-620{
+     display: none;
+ }
+.Container-Navbar-right ul{
+    list-style-type: none;
+    display:flex;
+    justify-content:space-between;
+}
+.Container-Navbar-right ul li{
+    cursor: pointer;
+}  
+
+
+
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 50vh; */
+    width: 100%;
+    background-color:#a9d1f7 ;
+    border-bottom: 1px solid black;
+}
+.Container-Header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Header-left{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid greenyellow; */
+
+}
+.Header-left-832{
+    width: 50%;
+    height: 100%;
+    display: none;
+}
+
+.Header-left h1, .Header-left-832 h1{
+    font-size: 55px;
+}
+.Header-left p, .Header-left-832 p{
+    font-size: 24px;
+}
+.Header-left button ,.Header-left-832 button{
+    margin-top: 30px;
+    padding: 11px 22px;
+    border-radius: 20px;
+    font-size: 16px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+.Header-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.Header-right img{
+    width: 68%;
+    height: 49.9vh;
+    border-radius: 500px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 832px){
+    .Container-Navbar-left{
+        width: 40%;
+    }
+    .Container-Navbar-right{
+        width: 60%;
+    }
+    .Header-left{
+        display: none;
+    }
+    .Header-left-832{
+        display: block;
+    }
+
+       
+  
+  }
+  @media only screen and (max-width: 620px){
+      .Container-Navbar-right-ul-li ul{
+        display: none;
+      }
+    
+    .Use-Container-Navbar-right-ul-li-620{
+        /* border: 2px solid greenyellow;  */
+        display: block;
+        font-weight: 800;
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .Container-Navbar-left{
+        /* border: 2px solid greenyellow;  */
+        width: 40%;
+    }
+  
+  }
+  @media only screen and (max-width: 600px){
+    .Header-right{
+        display: none;
+    }
+    .Header-left-832{
+       width: 100%;
+        /* border: 2px solid greenyellow;  */
+    }
+  }
