@@ -32,9 +32,10 @@
     font-weight: 700;
 }
 .Top-Poster{
-      /* border: 2px solid greenyellow; */
+  cursor: pointer;
+  /* border: 2px solid greenyellow; */
    display: flex;
-   padding: 10px 0 0 0;
+   margin: 10px 0 0 0;
 } 
 .Top-Poster img{
     width: 20px;
@@ -47,14 +48,59 @@
    font-weight: 500;
 }
 .Top-Post p {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  /* border: 2px solid greenyellow; */
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: 800;
 }
 .Top-Post span{
     font-size: 14px;
     color: rgb(139, 133, 133);
 }
+
+
+
+
+
+
+.loader-container{
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.loader:before, .loader:after {
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    border-top-color: #ECD078;
+    border-right-color: #C02942;
+    border-bottom-color: #542437;
+    border-left-color: #53777A;
+    content: '';
+    transform: translate(-50%, -50%);
+    animation: rotate 1.5s  infinite ease-in-out;
+  }
+  .loader:before {
+    border-width: 4vh;
+  }
+  .loader:after {
+    width: 5vh;
+    height: 5vh;
+    border-width: 2vh;
+    animation-direction: reverse;
+  }
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
 
 @media only screen and (max-width: 660px){
     .ContentTrending-item{

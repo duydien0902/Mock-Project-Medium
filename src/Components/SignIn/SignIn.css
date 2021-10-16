@@ -1,0 +1,107 @@
+.wrapper-SIGNUP,.wrapper-SIGNIN{
+    width: 100%;
+    background-color:#cadff3;
+    display: flex;
+   
+}
+.SignIn, .SignUp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.off-from-relative{
+    position: relative;
+  
+   
+}
+.off-from p{
+   
+    right: 1%;
+  position: absolute;
+    color: black;
+    font-weight: 500;
+    font-size: 30px;
+   cursor: pointer;
+}
+.SignIn-container, .SignUp-container{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 50%;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: #a9d1f7;
+
+}
+.SignIn-container h1,.SignUp-container h1{
+        padding-top: 60px;
+}
+.input-SignIn-container {
+   justify-content: space-around;
+   margin-top: 60px;
+   height: 200px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+.input-SignUp-container{
+    justify-content: space-around;
+    margin-top: 60px;
+    height: 340px;
+     display: flex;
+     flex-direction: column;
+}
+.input-SignIn-container input, .input-SignUp-container input{
+  margin-top: 100px;
+    width: 60%;
+    padding: 13px;
+    margin: 0 auto;
+}
+.input-SignIn-container button,.input-SignUp-container button{
+    cursor: pointer;
+    padding: 13px;
+    width: 60%;
+    margin: 0 auto;
+}
+.input-SignIn-container-wrapper p,.input-SignUp-container-wrapper p{
+    margin-top: 30px;  
+  
+   
+}
+.link:hover{
+    color: red;
+    cursor: pointer;
+}
+.link{
+    color: black;
+}
+.text-bottom-SignIn{
+   width: 80%;
+   color: gray;
+   font-size: 15px;
+   margin: 30px auto;
+}
+.form-inputs {
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  .form-inputs p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #f00e0e;
+  }
+
+
+
+@media only screen and (max-width: 650px){
+    .SignIn-container, .SignUp-container{
+        background-color:#cadff3 ;
+        box-shadow: none;
+        width: 100%;
+       
+    }
+    .off-from p{
+        right: 10%;
+    }
+ 
+}

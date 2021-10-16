@@ -1,7 +1,16 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 import '../Navbar/Navbar.css'
 import Img from '../Img/pexels-photo-5052880.jpeg'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 function Navbar() {
+    useEffect(() => {
+        document.title = 'Medium - Where';
+    });
     return (
         <div className='NAVBAR'>
             <div className='Relative-Navbar'>
@@ -10,20 +19,20 @@ function Navbar() {
                         <div className='Container-Navbar-left'>
                             <h1>Medium</h1>
                         </div>
-                        <div className='Container-Navbar-right'>
+                        <div className='Container-Navbar-right'  >
                             <div className='Container-Navbar-right-ul-li'>
                                 <ul >
-                                    <li>Our story</li>
-                                    <li>Membership</li>
-                                    <li>Write</li>
-                                    <li classNam='Signin'>Sign In</li>
+                                    <Link className='link' to='/Outstory'><li>Our story</li> </Link>
+                                    <Link className='link' to='/Membership' ><li>Membership</li> </Link>
+                                    <Link className='link' to='/Write'><li>Write</li> </Link>
+                                    <Link className='link' to='/SignIn'><li classNam='Signin'>Sign In</li></Link>
 
                                 </ul>
                             </div>
 
                             <div className='Use-Container-Navbar-right-ul-li-620'>
                                 <ul>
-                                    <li classNam='Signin'>Sign In</li>
+                                    <Link className='link' to='/Signin'>  <li classNam='Signin'>Sign In</li></Link>
                                 </ul>
                             </div>
 
@@ -49,7 +58,7 @@ function Navbar() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

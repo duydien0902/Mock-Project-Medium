@@ -1,0 +1,137 @@
+.Homepage-FindWord-Relative{
+    width: 35%;
+    border-left:1px solid  rgb(161, 158, 158);
+}
+.Homepage-FindWork{
+    height: 100vh;
+    padding-left: 50px;
+    top: 30px;
+    position: sticky;
+    margin-top: 30px;
+     
+    width: 100%;
+}
+.Homepage-FindWork b{
+    margin-left: 15px;
+    font-size: 16px;
+   }
+.w80 {
+    width: 80%;
+}
+ .Homepage-Button-Findword{
+   
+    padding-bottom: 40px;
+     padding-top: 10px;
+     display: flex;
+     flex-wrap: wrap;
+ }  
+ .Homepage-Button-Findword button{
+    margin-left: 15px;
+     margin-top: 10px;
+     padding: 8px 15px;
+     cursor: pointer;
+     border-radius: 20px;
+     border: 1px solid rgb(241, 238, 238);
+     background-color: rgb(241, 238, 238);
+ }
+  .button-Category button:hover{
+    background-color: rgb(233, 229, 229);
+ } 
+  
+ .Homepage-FindWork ul{
+    margin-top: 33px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+  
+ }
+ .Homepage-FindWork li{
+     font-size: 14px;
+  margin-left: 15px;
+  line-height: 25px;
+  cursor: pointer;
+ }
+.Hompage-Suggestion-follow{
+    margin-left: 15px;
+    padding-top: 17px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.Hompage-Suggestion-follow-avater img{
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+}
+.Hompage-Suggestion-follow-title{
+    padding-left: 15px;
+    width: 100%;
+}
+.Hompage-Suggestion-follow-title h4{
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+.Hompage-Suggestion-follow-title p{
+    line-height: 18px;
+    font-size: 12px;
+}
+.Hompage-Suggestion-follow-title-button-follow{
+    padding-top: 4px;
+}
+.Hompage-Suggestion-follow-title-button-follow button{
+    font-size: 13px;
+}
+.Fl button{
+    background-color: white;
+    border: 1px solid gray;  
+}
+.Ufl{
+    display: none;
+}
+.Ufl button{
+    background-color: black;
+    color: blanchedalmond;
+    border: 1px solid black;  
+}
+.Hompage-Suggestion-follow-title-button-follow button:hover{
+    border: 1px solid black;  
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1310px){
+    .Homepage-FindWork{
+       
+        overflow: scroll;
+      
+    }
+  }
+
+  @media only screen and (max-width: 985px){
+     .Homepage-FindWord-Relative{
+        border-bottom: 1px solid rgb(161, 158, 158);
+        z-index: 3;
+        width: 100%;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .Homepage-FindWork{
+        height: 400px;
+        width: 80%;
+        margin: 0 auto;   
+    }  
+  } 
+ 
+  
+  
+
+
+
+
+    

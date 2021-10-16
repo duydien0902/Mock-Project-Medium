@@ -1,0 +1,207 @@
+.Homepage-RecommendedContent{
+    width: 100%;
+  background-color:rgb(250, 249, 249);
+}
+
+.Homepage-Followers{
+ 
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 80px;
+    overflow: scroll;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    /* border: 1px solid greenyellow; */
+}
+.Homepage-Followers-Render{
+    margin-top: 3px;
+      /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+   height: auto;
+    align-items:center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.Homepage-Followers-avt img{
+width: 65px;
+height: 65px;
+border-radius: 50px;
+}
+
+.Homepage-Followers-name p{
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 10px;
+    font-weight: 700;
+   
+}
+.Homepage-RecommendedContent-Container{
+     /* border: 1px solid red; */
+    margin:0 auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.Homepage-RecommendedContent-Container-Wrapper-Column{
+     /* border: 1px solid red; */
+    width:60%;
+    margin-top: 60px;
+    /* border: 1px solid red; */
+}
+.Homepage-RecommendedContent-Container-Wrapper-Column-title{
+    display: flex; 
+}
+.Homepage-RecommendedContent-Container-Wrapper-Column-title p{
+    /* border: 1px solid red; */
+   font-size: 13px;
+   font-weight: 700;
+   padding-left: 20px;
+   cursor: pointer;
+   padding-bottom: 10px;
+   color: rgb(173, 169, 169);
+}
+
+.Homepage-RecommendedContent-Container-Wrapper{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.Homepage-Recommended-Content{
+    width: 70%;
+    /* border:1px solid black */
+}
+
+.Homepage-Recommended-Content-item{
+   display: flex;
+    width: 100%;
+}
+.Homepage-Recommended-Content-item-img-name{
+    display: flex;
+}
+
+.Homepage-Recommended-Content-item-img-name img{
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
+ .Homepage-Recommended-Content-item-img-name p{
+   padding-left: 7px;
+   font-size: 14px;
+   font-weight: 500;
+}
+
+
+.Homepage-Recommended-Post h4 {
+    font-size: 21px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: 800;
+}
+.Homepage-Recommended-Post p{
+    padding-bottom: 8px;
+    font-size: 14px;
+}
+.Homepage-Recommended-Post span{
+    font-size: 15px;
+    color: rgb(139, 133, 133);
+}
+
+
+.Homepage-RecommendedContent-Img{
+    width: 30%;
+   
+}
+.Homepage-RecommendedContent-Img img{
+    width: 100%;
+    height: 140px;
+}
+
+
+
+.Homepage-Reading-list p{
+    padding-top: 17px;
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 2;
+}
+
+ .Homepage-RecommendedContent-loader-container{
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.Homepage-RecommendedContent-loader:before, .Homepage-RecommendedContent-loader:after {
+    top:50%;
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    border-top-color: #ECD078;
+    border-right-color: #C02942;
+    border-bottom-color: #542437;
+    border-left-color: #53777A;
+    content: '';
+    transform: translate(-50%, -50%);
+    animation: rotate 1.5s  infinite ease-in-out;
+  }
+  .Homepage-RecommendedContent-loader:before {
+    border-width: 4vh;
+  }
+  .Homepage-RecommendedContent-loader:after {
+    width: 10vh;
+    height: 10vh;
+    border-width: 2.5vh;
+    animation-direction: reverse;
+  }
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 660px){
+    .Homepage-ContentTrending-item{
+        width: 45%;
+    }
+  
+  }
+  @media only screen and (max-width: 460px){
+    .Homepage-ContentTrending-item{
+        width: 100%;
+    }
+  
+  }
+     @media only screen and (max-width: 985px){
+        .Homepage-RecommendedContent-Container{
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .Homepage-RecommendedContent-Container-Wrapper-Column{
+            margin: 0 auto;
+            width: 80%;
+        }    
+       
+      
+      }

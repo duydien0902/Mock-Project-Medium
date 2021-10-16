@@ -18,14 +18,16 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-top: 40px;
+    margin-top: 40px;
     /* border: 1px solid black; */
+    cursor: pointer;
 }
 .FindWord-Relative{
     width: 33%;
     /* border: 1px solid black; */
 }
 .FindWork{
+    /* overflow-y: scroll; */
     top: 80px;
     position: sticky;
     padding-top: 40px;
@@ -120,7 +122,6 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-  
  }
  .FindWork li{
   margin-left: 15px;
@@ -130,6 +131,67 @@
 
 
  
+
+
+
+ .RecommendedContent-loader-container{
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.RecommendedContent-loader:before, .RecommendedContent-loader:after {
+    top:120%;
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    border-top-color: #ECD078;
+    border-right-color: #C02942;
+    border-bottom-color: #542437;
+    border-left-color: #53777A;
+    content: '';
+    transform: translate(-50%, -50%);
+    animation: rotate 1.5s  infinite ease-in-out;
+  }
+  .RecommendedContent-loader:before {
+    border-width: 4vh;
+  }
+  .RecommendedContent-loader:after {
+    width: 5vh;
+    height: 5vh;
+    border-width: 2vh;
+    animation-direction: reverse;
+  }
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+
+@media only screen and (max-width: 660px){
+    .ContentTrending-item{
+        width: 45%;
+    }
+  
+  }
+  @media only screen and (max-width: 460px){
+    .ContentTrending-item{
+        width: 100%;
+    }
+  
+  }
+
+
+
+
+
+
+
+
 
 
 
@@ -153,7 +215,7 @@
             z-index: -1;
             margin: 0 auto;
             width: 100%;
-            padding-bottom: 30px;
+            padding-bottom: 40px;
         }
         .FindWork ul{
             display: none;
